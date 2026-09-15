@@ -15,16 +15,16 @@ Regler, Historia and Länkar, using your real content and photos.
 Two new pages, **Resultat** (`resultat.html`) and **Landslaget**
 (`landslag.html`), now have the real results tables and UT-poäng
 standings pulled from your current site, linked from the Arrangemang
-page. One important catch: like the Regler/Historia document links
-below, every result file link (`f3c.se/onewebmedia/Resultat/...`) is
-still served directly by your current One.com site, not from the
-`impro.usercontent.one` media library your photos use. That means
-**these links will stop working the moment f3c.se's DNS is repointed
-to GitHub Pages** — the old site (and its files) won't be reachable at
-that domain anymore. Before you flip DNS, either download that whole
-results archive and I'll add it into this repo, or keep the files
-reachable somewhere else (a subdomain still pointed at One.com, cloud
-storage, etc.) and send me the new links.
+page and the main menu. All ~107 result file links now point to
+`filer.f3c.se` — a subdomain that stays pointed at your One.com
+account's file manager, separate from the main f3c.se domain that's
+moving to GitHub Pages. **Before you flip the DNS for f3c.se**, make
+sure `filer.f3c.se` is created (Subdomains, under Advanced Settings in
+One.com's control panel) and every result file has been uploaded there
+under the same folder structure it has today (`onewebmedia/Resultat/2026/...`
+etc.), since a Website Builder site can't itself live on a subdomain —
+the files need to be copied into that subdomain's file manager
+separately.
 
 One thing remains a placeholder, by necessity rather than oversight:
 
