@@ -206,8 +206,7 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 .news-section{ background: var(--paper-soft); }
 .news-grid{
   display: grid;
-  grid-template-columns: 1.15fr 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
 .news-card{
@@ -215,18 +214,17 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
   transition: transform .18s ease, box-shadow .18s ease;
 }
 .news-card:hover{ transform: translateY(-4px); box-shadow: var(--shadow); }
-.news-card a{ display: block; height: 100%; }
+.news-card a{ display: flex; flex-direction: column; height: 100%; }
 .news-card img{ width: 100%; aspect-ratio: 16/10; object-fit: cover; }
-.news-card-feature{ grid-row: span 2; }
-.news-card-feature img{ aspect-ratio: 16/11; }
-.news-body{ padding: 1.4rem; }
+.news-body{ padding: 1.4rem; display: flex; flex-direction: column; flex: 1; }
 .news-body time{ font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--blue-500); }
-.news-body h3{ font-size: 1.15rem; margin: .5em 0 .5em; }
-.news-card-feature h3{ font-size: 1.4rem; }
-.news-body p{ font-size: .93rem; margin-bottom: .8em; }
+.news-body h3{ font-size: 1.1rem; margin: .5em 0 .5em; }
+.news-body p{ font-size: .93rem; margin-bottom: .8em; flex: 1; }
 .read-more{ font-family: var(--font-display); font-weight: 700; font-size: .85rem; color: var(--blue-500); }
 
 /* ============ About ============ */
@@ -302,7 +300,6 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 /* ============ Responsive ============ */
 @media (max-width: 960px){
   .news-grid{ grid-template-columns: 1fr 1fr; }
-  .news-card-feature{ grid-column: span 2; grid-row: auto; }
   .about-grid{ grid-template-columns: 1fr; }
   .about-media{ order: -1; }
   .about-media img{ aspect-ratio: 16/9; }
@@ -465,7 +462,6 @@ table.event-table{ width: 100%; border-collapse: collapse; min-width: 640px; fon
   .nav-toggle{ display: flex; }
   .strip-grid{ grid-template-columns: 1fr 1fr; }
   .news-grid{ grid-template-columns: 1fr; }
-  .news-card-feature{ grid-column: auto; }
   .footer-grid{ grid-template-columns: 1fr; }
   .footer-brand{ grid-column: auto; }
   .photo-grid{ grid-template-columns: repeat(3, 1fr); }
