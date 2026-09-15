@@ -12,19 +12,29 @@ images keep working with zero migration.
 All eight pages are built: homepage, Nyheter, Arrangemang, Media, Teori,
 Regler, Historia and Länkar, using your real content and photos.
 
-Two things are placeholders for now, both by necessity rather than
-oversight:
+Two new pages, **Resultat** (`resultat.html`) and **Landslaget**
+(`landslag.html`), now have the real results tables and UT-poäng
+standings pulled from your current site, linked from the Arrangemang
+page. One important catch: like the Regler/Historia document links
+below, every result file link (`f3c.se/onewebmedia/Resultat/...`) is
+still served directly by your current One.com site, not from the
+`impro.usercontent.one` media library your photos use. That means
+**these links will stop working the moment f3c.se's DNS is repointed
+to GitHub Pages** — the old site (and its files) won't be reachable at
+that domain anymore. Before you flip DNS, either download that whole
+results archive and I'll add it into this repo, or keep the files
+reachable somewhere else (a subdomain still pointed at One.com, cloud
+storage, etc.) and send me the new links.
 
-- **Arrangemang → "Resultat" links** point back to the Arrangemang page
-  itself. The actual results tables live at `/arrangemang/resultat` on
-  your current site and weren't captured in full — send them over (or
-  point me at them) and I'll build that page for real.
+One thing remains a placeholder, by necessity rather than oversight:
+
 - **Regler and Historia → document links** (Sporting Code, Bilagor,
   historiska program, etc.) currently link out to the matching section
   on your existing f3c.se, because those files are embedded through a
   widget on the One.com site that doesn't expose a direct file URL. Once
   you can grab the actual PDF links (or the files themselves), send them
-  over and I'll wire up direct downloads instead.
+  over and I'll wire up direct downloads instead. (Same DNS caveat as
+  above applies here too.)
 
 Everything else — all news posts, the full events calendar, photo
 galleries, theory content, and links — is the real content from your
