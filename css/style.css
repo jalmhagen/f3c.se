@@ -158,7 +158,7 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
   overflow: hidden;
 }
 .hero-media{ position: absolute; inset: 0; }
-.hero-media img{ width: 100%; height: 100%; object-fit: cover; object-position: center 65%; transform: scale(1.22); transform-origin: 78% 55%; }
+.hero-media img{ width: 100%; height: 100%; object-fit: cover; object-position: center 65%; transform: scale(1.1); transform-origin: 78% 55%; }
 .hero-scrim{
   position: absolute; inset: 0;
   background:
