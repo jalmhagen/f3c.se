@@ -378,7 +378,7 @@ table.event-table{ width: 100%; border-collapse: collapse; min-width: 640px; fon
 .tag-cancelled{ color: #b4534a; font-weight: 700; font-size: .8rem; }
 table.results-table{ table-layout: fixed; }
 .results-table th:first-child, .results-table td:first-child{ width: 300px; }
-.event-table tr.selected td{ background: var(--blue-100); font-weight: 700; box-shadow: inset 3px 0 0 var(--blue-500); }
+.event-table tr.selected td{ font-weight: 700; box-shadow: inset 3px 0 0 var(--blue-500); }
 
 /* ============ Document list (Regler / Historia) ============ */
 .doc-section{ padding: 4.5rem 0 6rem; }
