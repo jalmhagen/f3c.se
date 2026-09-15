@@ -9,10 +9,26 @@ Photos and videos are **not** stored in this repo — every `<img>` and
 existing YouTube embeds). As long as that library stays where it is, the
 images keep working with zero migration.
 
-Currently built: the homepage (`index.html`). The other sections
-(Nyheter, Arrangemang, Media, Teori, Regler, Historia, Länkar) are linked
-from the navigation but not built out yet — let me know when you're ready
-for those.
+All eight pages are built: homepage, Nyheter, Arrangemang, Media, Teori,
+Regler, Historia and Länkar, using your real content and photos.
+
+Two things are placeholders for now, both by necessity rather than
+oversight:
+
+- **Arrangemang → "Resultat" links** point back to the Arrangemang page
+  itself. The actual results tables live at `/arrangemang/resultat` on
+  your current site and weren't captured in full — send them over (or
+  point me at them) and I'll build that page for real.
+- **Regler and Historia → document links** (Sporting Code, Bilagor,
+  historiska program, etc.) currently link out to the matching section
+  on your existing f3c.se, because those files are embedded through a
+  widget on the One.com site that doesn't expose a direct file URL. Once
+  you can grab the actual PDF links (or the files themselves), send them
+  over and I'll wire up direct downloads instead.
+
+Everything else — all news posts, the full events calendar, photo
+galleries, theory content, and links — is the real content from your
+current site, redesigned.
 
 ## 1. Put this on GitHub
 
@@ -78,8 +94,15 @@ then open `http://localhost:8000`.
 ## File structure
 
 ```
-index.html       Homepage
-css/style.css     All styling
-js/main.js        Mobile nav toggle, footer year
-CNAME             Tells GitHub Pages which custom domain to serve
+index.html          Homepage
+nyheter.html         News archive
+arrangemang.html     Competition calendar (2024–2026)
+media.html           Videos, photo galleries, tutorials
+teori.html           Theory & training content
+regler.html          Rules & documents
+historia.html        Historical programs
+lankar.html          Links & contact
+css/style.css        All styling
+js/main.js           Mobile nav toggle, footer year
+CNAME                Tells GitHub Pages which custom domain to serve
 ```
