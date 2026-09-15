@@ -1,6 +1,6 @@
-# F3C Sverige — new website
+# F3C Sweden — new website
 
-This is the redesigned F3C Sverige site, built as a plain static site (no
+This is the redesigned F3C Sweden site, built as a plain static site (no
 build step, no framework) so it can be hosted for free on GitHub Pages.
 
 Photos and videos are **not** stored in this repo — every `<img>` and
