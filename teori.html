@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teori — F3C Sverige</title>
+<meta name="description" content="Terminologi, autorotation, träningstips och vad som gäller på tävling — grunderna i F3C.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">F3C<span>Sverige</span></a>
+    <nav class="main-nav" aria-label="Huvudmeny">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Meny</span>
+      </button>
+      <ul id="nav-list">
+        <li><a href="nyheter.html">Nyheter</a></li>
+        <li><a href="arrangemang.html">Arrangemang</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="teori.html" class="active">Teori</a></li>
+        <li><a href="regler.html">Regler</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="lankar.html">Länkar</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Hem</a> / Teori</p>
+      <h1>Teori och träning</h1>
+      <p>Terminologi, autorotation, träningstips och vad som gäller på tävlingsdagen — allt du behöver för att komma igång med F3C.</p>
+    </div>
+  </section>
+
+  <section class="theory">
+    <div class="wrap">
+
+      <nav class="theory-toc" aria-label="Innehåll">
+        <a href="#terminologi">Terminologi</a>
+        <a href="#autorotation">Autorotation</a>
+        <a href="#traningstips">Träningstips</a>
+        <a href="#checklista">Börja tävla — checklista</a>
+        <a href="#pa-tavling">På tävling</a>
+        <a href="#gyro">Gyro PID Gain</a>
+      </nav>
+
+      <div class="theory-block" id="terminologi">
+        <h2>Terminologi</h2>
+        <p>En illustration av en RC-helikopter visar de olika delarnas namn:</p>
+        <ul>
+          <li>1. Huvudrotorblad</li>
+          <li>2. Hub huvudrotor</li>
+          <li>3. Bladhållare (huvudrotor)</li>
+          <li>4. Huv/Canopy</li>
+          <li>5. Landningställ</li>
+          <li>6. Bränsletank (eller batteri)</li>
+          <li>7. Boom</li>
+          <li>8. Stjärtrotor</li>
+          <li>9. Motor/ljuddämpare (elektriska helikoptrar behöver ej bränsletank och ljuddämpare)</li>
+        </ul>
+        <h3>Hovringsorientering</h3>
+        <p>Vi använder olika benämningar under hovring. Beroende på vart ni står och hur helikoptern förhåller sig till er kallar vi detta för olika positioner.</p>
+        <p>Det går lika bra att flyga och hovra inverterat (upp och ner). Baklänges och i sidled fungerar också. Det finns inga hinder, bara brist på fantasi!</p>
+      </div>
+
+      <div class="theory-block" id="autorotation">
+        <h2>Autorotation</h2>
+        <p>En autorotation är en nödlandning utan att helikopterns motor är igång. Om motorn stannar på en helikopter behöver det inte resultera i en krasch.</p>
+        <p>Man kan jämföra helikopterns rotor med ett vindkraftverk under en autorotation. I enkla ord så "vindmillar" (autoroterar) helikopterns rotor hela vägen ner till landning. Vi skapar en sjunkhastighet genom att minska bladvinkeln till "negativ". När helikoptern sjunker ger det mycket "luft under rotorn", vilket säkrar att rotorn inte tappar sin hastighet. Nära marken ökas bladvinkeln och skapar lyftkraft där sjunkhastigheten minskar.</p>
+        <p><strong>Man har bara en chans på sig</strong>, eftersom rotorn börjar sakta ner när bladvinkeln ökar!</p>
+        <h3>Metod 1</h3>
+        <ul>
+          <li>Bladvinkeln på huvudrotorbladen minskas till ca -3°.</li>
+          <li>En hastighet framåt är nödvändig, mot vindens riktning, och en landningsvinkel på ca 45°.</li>
+          <li>Vid ca 2–5 m från marken påbörjas en "flare" där man bromsar upp helikopterns hastighet framåt och även minskar sjunkhastigheten inför landning.</li>
+          <li>Precis när helikoptern får markkontakt appliceras full negativ pitch. Detta kan förhindra att helikoptern välter.</li>
+        </ul>
+        <h3>Metod 2</h3>
+        <ul>
+          <li>Samma princip som Metod 1 för de första tre stegen.</li>
+          <li>En senare "flare" utförs på ca 1 m höjd — men här behåller vi helikopterns hastighet och fortsätter flyga framåt.</li>
+          <li>Vid markkontakt ger vi lite minus pitch och helikoptern glider på landningsplatsen tills den stannar. Vi sparar då lite rörelseenergi från rotorbladen, vilket kan vara bättre om vi inte har mycket energi kvar — men helikoptern riskerar att välta om hastigheten vid markkontakt är för hög.</li>
+        </ul>
+        <p>Nedan ser ni F3C-autorotationer med 2 st 90°-svängar från ett japanskt mästerskap.</p>
+      </div>
+
+      <div class="theory-block" id="traningstips">
+        <h2>Träningstips</h2>
+        <p>Det krävs mycket disciplin och tålamod inom F3C. Svårighetsgraden är otroligt hög i de manövrar som finns. För den ensamma flygaren på fältet är det inte lätt att veta hur manövern ska se ut — det underlättar att se andra flyga samma program. Därför är det viktigt att titta på en tävling, eller se någon tävla. Men den bästa träningen får man vid själva tävlingen, när alla domare och piloter finns på plats och kan ge tips och råd.</p>
+        <h3>Utrustning</h3>
+        <p>Förutom en helikopter krävs det inte så mycket mer för att kunna börja träna. Det viktigaste är att du har en hovringsruta som ser likadan ut som på en tävling. För att göra en sådan krävs tre saker: måttband, ett par flaggor och målarfärg/sprayfärg. Det räcker att måla cirkeln i mitten ("H") samt flaggorna och pilotrutan ("P") om man vill spara färg.</p>
+        <h3>Träningstips hovring</h3>
+        <p>Det finns inga rätta svar på den optimala träningen. En viktig del är att rita upp en hovringsruta. Om fältet är ojämnt med kullar och träd blir det turbulenta vindar när det blåser — det ger bra träning, men tävlingsplatserna brukar oftast ha en jämn markyta och vara fria från hinder.</p>
+        <p>Vissa grundläggande manövrar är bra att kunna behärska innan man börjar tävla:</p>
+        <ul>
+          <li><strong>Start och landning i hovringscirkeln</strong> — modellen stiger i en lugn hastighet. Helikoptern måste befinna sig på 2 m höjd.</li>
+          <li><strong>Förflyttning mellan hovringscirkeln och en flagga</strong> — när man behärskar de första momenten övar man på en förflyttning till en flagga (backande eller framåt). Modellen ska hela tiden ha samma höjd och en mjuk hastighet.</li>
+          <li><strong>Hovring över en flagga</strong> — helikopterns rotoraxel ska vara över den tänkta linjen över flaggan. När man behärskar detta kan man gå vidare till långsamma piruetter över flaggan.</li>
+          <li><strong>Hovring över en flagga på 4–5 m höjd</strong> — samma som ovan fast på en högre höjd.</li>
+          <li><strong>Hovring på 4–7 m över mittcirkeln</strong> — samma som ovan fast rakt framför piloten på 4–5 meters höjd.</li>
+        </ul>
+        <h3>Träningstips för flygning</h3>
+        <p>De två viktigaste faktorerna är precision och mjukhet i manövern. Storleken mellan de olika manövrarna måste också vara lika i förhållande till varandra och inte avvika för mycket.</p>
+        <ul>
+          <li><strong>Raka förbiflygningar</strong> — man måste kunna flyga rakt förbi sig själv i ca 100 m i motvind och medvind, hela tiden med samma höjd och hastighet. En bra höjd är ca 15–20 m över marken och 50–70 m framför piloten.</li>
+          <li><strong>Rollar, loopingar och stallturns</strong> — alla tre är bra att behärska. Kan man göra dem centrerade framför sig är det lättare att kombinera dem med andra delmoment.</li>
+          <li><strong>Landning/autorotation</strong> — alltid bra att kunna utföra säkert. Kan man göra det med precision, t.ex. landa/autorotera i en cirkel, har man kommit en bra bit på vägen mot en bra placering på en tävling.</li>
+        </ul>
+      </div>
+
+      <div class="theory-block" id="checklista">
+        <h2>Börja tävla — checklista</h2>
+        <ul>
+          <li>Läs igenom informationen som finns här på F3C.se. Kontakta oss på <a class="inline-link" href="https://www.facebook.com/groups/265062390228877/" target="_blank" rel="noopener">Facebook</a> för att berätta att ni är intresserade — ni kan få personlig hjälp!</li>
+          <li>Välj helikopter. Har du ett val, välj en större helikopter — annars börja med det ni har, allt från 500-storlek och uppåt fungerar bra.</li>
+          <li>Ställ in maskinen för F3C. Läs igenom allt på tekniksidan, Set-Up för F3C, och kontakta oss gärna på Facebook igen.</li>
+          <li>Börja öva på det program ni tror passar er — läs <a class="inline-link" href="#traningstips">träningstipsen</a>. Det finns tre svårighetsnivåer, detaljer hittar ni under <a class="inline-link" href="regler.html">Regler</a>. Kontakta oss på Facebook för att hitta er närmsta träningskompis.</li>
+          <li>Skaffa tävlingslicensen. Ni måste vara anslutna till en registrerad SMFF-klubb — prata med er klubb om att ni önskar en tävlingslicens för F3C. Den kostar 200 kr/år, och er klubb kanske vill sponsra avgiften (eftersom ni representerar klubben).</li>
+          <li>Börja tävla! Gå till <a class="inline-link" href="arrangemang.html">Arrangemang</a> och hitta var er närmsta tävling går.</li>
+        </ul>
+      </div>
+
+      <div class="theory-block" id="pa-tavling">
+        <h2>På tävling</h2>
+        <h3>Briefing</h3>
+        <p>Alla piloter, domare och arrangörer samlas för en briefing innan tävlingen börjar. Arrangören välkomnar alla deltagare och tävlingsledaren får säga sitt. Det pratas bland annat om väderprognoser, tävlingsplatsen, startordningen och vilken klass som börjar.</p>
+        <h3>Referensflygning</h3>
+        <p>Innan tävlingen börjar officiellt görs en referensflygning i samtliga klasser. Detta är endast för domarnas skull så att de kan "värma upp". Flygningarna görs av tre frivilliga piloter, och efteråt diskuterar domarna sina åsikter om varje flygning för att kunna ge en jämn bedömning och se till att ingen avviker i sina åsikter och poängsättningar.</p>
+        <h3>Depå</h3>
+        <p>Den mentala träningen kanske redan började veckan innan du anlände till tävlingen. Dina nerver kommer i alla fall komma igång i depån. Här är det viktigt att all din utrustning fungerar — dina rutiner med tankning, skruva på rotorbladen, kolla laddningen och så vidare börjar nu verka. Ett tips är att inte ändra på dessa rutiner bara för att du ska tävla — gör som du alltid gjort.</p>
+        <h3>Readyboxen</h3>
+        <p>Nu är det snart din tur att flyga. Det finns en utsedd plats för den tävlande att starta sin maskin i lugn och ro. I Ready Boxen får man endast hovra med helikoptern i ögonhöjd och göra en halv piruett — en hel 360-graders piruett är inte tillåten. Den tävlande har rätt till 5 minuter innan start i ready boxen, och pilotens caller/mekaniker får också vistas här.</p>
+        <h3>Caller/mekanikern</h3>
+        <p>Vid en tävling har varje pilot en "caller" (läsare), som även kan agera mekaniker åt piloten i ready boxen. Hela syftet med en caller är att hjälpa piloten komma ihåg alla manövrar samt att berätta för domarna när en manöver börjar och slutar.</p>
+        <h3>Tävlingsrutan</h3>
+        <p>När man väl har gått ifrån ready boxen finns det ingen återvändo. Tävlingsomgången blir diskvalificerad om motorn stannar eller om piloten eller callern rör maskinen. När helikoptern står på sin plats i hovringsrutans centrum ställer sig piloten och caller i pilotrutan framför de fem domarna. I hovringsrutan utför den tävlande två hovringsmanövrar och sedan 5–7 flygmanövrar (beroende på flygprogram).</p>
+        <h3>Resultaten</h3>
+        <p>Efter din flygning kommer resultaten och nuvarande ställning att visas. Vid denna plats brukar man höra kommentarer som "Fick jag inte mer poäng!?", "Det blåste så mycket!" och "Jag måste flyga bättre nästa omgång". Allt är mycket roligt, vilket ni kommer förstå när ni tävlar första gången!</p>
+      </div>
+
+      <div class="theory-block" id="gyro">
+        <h2>Gyro PID Gain</h2>
+        <p>Videon nedan beskriver på ett pedagogiskt sätt hur P-, I- och D-inställningarna i ett gyro påverkar hur helikoptern reagerar på förändringar.</p>
+        <div class="video-embed" style="max-width:640px">
+          <iframe src="https://www.youtube.com/embed/ep8OO-1XmrY" title="Gyro PID Gain" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo logo-footer">F3C<span>Sverige</span></a>
+      <p>Svensk tävling inom radiostyrd helikopteraerobatik. Del av Svenska Modellflygförbundet (SMFF).</p>
+      <a class="social-link" href="https://www.facebook.com/groups/1132193521685893" target="_blank" rel="noopener">Facebook: F3C Sverige</a>
+    </div>
+    <div class="footer-col">
+      <h3>Navigera</h3>
+      <ul>
+        <li><a href="nyheter.html">Nyheter</a></li>
+        <li><a href="arrangemang.html">Arrangemang</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="teori.html">Teori</a></li>
+        <li><a href="regler.html">Regler</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="lankar.html">Länkar</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Kontakt</h3>
+      <ul class="contact-list">
+        <li>
+          <strong>Anders Stålblom</strong>
+          <span>Grenspecialist Helikopter, SMFF</span>
+          <a href="mailto:anders.stalblom@gmail.com">anders.stalblom@gmail.com</a>
+        </li>
+        <li>
+          <strong>Jesper Almhagen</strong>
+          <span>Webbansvarig</span>
+          <a href="mailto:j_almhagen@hotmail.com">j_almhagen@hotmail.com</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> F3C Sverige</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
