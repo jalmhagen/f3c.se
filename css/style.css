@@ -376,6 +376,8 @@ table.event-table{ width: 100%; border-collapse: collapse; min-width: 640px; fon
 .event-table .event-links{ display: flex; gap: .7rem; flex-wrap: wrap; }
 .event-table .event-links a{ color: var(--blue-500); font-weight: 700; white-space: nowrap; }
 .tag-cancelled{ color: #b4534a; font-weight: 700; font-size: .8rem; }
+table.results-table{ table-layout: fixed; }
+.results-table th:first-child, .results-table td:first-child{ width: 300px; }
 
 /* ============ Document list (Regler / Historia) ============ */
 .doc-section{ padding: 4.5rem 0 6rem; }
