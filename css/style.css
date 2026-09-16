@@ -411,8 +411,8 @@ table.schedule-table{ table-layout: fixed; }
 .schedule-table th:nth-child(1), .schedule-table td:nth-child(1){ width: 15%; }
 .schedule-table th:nth-child(2), .schedule-table td:nth-child(2){ width: 19%; }
 .schedule-table th:nth-child(3), .schedule-table td:nth-child(3){ width: 24%; }
-.schedule-table th:nth-child(4), .schedule-table td:nth-child(4){ width: 16%; }
-.schedule-table th:nth-child(5), .schedule-table td:nth-child(5){ width: 26%; }
+.schedule-table th:nth-child(4), .schedule-table td:nth-child(4){ width: 19%; }
+.schedule-table th:nth-child(5), .schedule-table td:nth-child(5){ width: 23%; }
 
 /* ============ Document list (Regler / Historia) ============ */
 .doc-section{ padding: 4.5rem 0 6rem; }
