@@ -407,6 +407,12 @@ table.event-table{ width: 100%; border-collapse: collapse; min-width: 640px; fon
 table.results-table{ table-layout: fixed; }
 .results-table th:first-child, .results-table td:first-child{ width: 300px; }
 .event-table tr.selected td{ font-weight: 700; box-shadow: inset 3px 0 0 var(--blue-500); }
+table.schedule-table{ table-layout: fixed; }
+.schedule-table th:nth-child(1), .schedule-table td:nth-child(1){ width: 15%; }
+.schedule-table th:nth-child(2), .schedule-table td:nth-child(2){ width: 19%; }
+.schedule-table th:nth-child(3), .schedule-table td:nth-child(3){ width: 24%; }
+.schedule-table th:nth-child(4), .schedule-table td:nth-child(4){ width: 16%; }
+.schedule-table th:nth-child(5), .schedule-table td:nth-child(5){ width: 26%; }
 
 /* ============ Document list (Regler / Historia) ============ */
 .doc-section{ padding: 4.5rem 0 6rem; }
