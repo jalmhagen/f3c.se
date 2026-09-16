@@ -467,6 +467,9 @@ table.schedule-table{ table-layout: fixed; }
   padding: .5rem 1rem; border-radius: 999px; background: var(--paper-soft); border: 1px solid var(--line);
 }
 .theory-toc a:hover{ border-color: var(--blue-400); color: var(--blue-500); }
+.theory-img{ display: block; max-width: 100%; height: auto; border-radius: 10px; box-shadow: var(--shadow); margin: 1.2rem 0; }
+.theory-img-row{ display: flex; flex-wrap: wrap; gap: 1.2rem; margin: 1.2rem 0; }
+.theory-img-row .theory-img{ margin: 0; flex: 1 1 240px; }
 
 /* ============ Links page ============ */
 .links-section{ padding: 4.5rem 0 6rem; }
