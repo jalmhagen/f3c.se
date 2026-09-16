@@ -103,6 +103,7 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 .site-header{
   position: sticky; top: 0; z-index: 100;
   background: rgba(6,13,28,.85);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
@@ -303,6 +304,28 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 .footer-bottom p{ margin: 0; font-size: .82rem; color: var(--ink-soft); }
 
 /* ============ Responsive ============ */
+
+/* Header nav switches to the hamburger menu well before the grid
+   breakpoints below: with 9 nav items, the horizontal nav needs
+   roughly 1070px to lay out without wrapping, so anything narrower
+   (including iPad portrait at 768px and iPad landscape at 1024px)
+   needs the collapsed menu or the nav overflows the header and the
+   whole page gains horizontal scroll. */
+@media (max-width: 1100px){
+  .main-nav #nav-list{
+    position: fixed; inset: 72px 0 0 0;
+    flex-direction: column;
+    background: var(--navy-950);
+    padding: 2rem 24px;
+    gap: 1.2rem;
+    transform: translateX(100%);
+    transition: transform .25s ease;
+    overflow-y: auto;
+  }
+  .main-nav.open #nav-list{ transform: translateX(0); }
+  .nav-toggle{ display: flex; }
+}
+
 @media (max-width: 960px){
   .news-grid{ grid-template-columns: 1fr 1fr; }
   .about-grid{ grid-template-columns: 1fr; }
@@ -462,17 +485,6 @@ table.results-table{ table-layout: fixed; }
 .gallery-cover-label span{ font-size: .8rem; color: rgba(255,255,255,.75); }
 
 @media (max-width: 720px){
-  .main-nav #nav-list{
-    position: fixed; inset: 72px 0 0 0;
-    flex-direction: column;
-    background: var(--navy-950);
-    padding: 2rem 24px;
-    gap: 1.2rem;
-    transform: translateX(100%);
-    transition: transform .25s ease;
-  }
-  .main-nav.open #nav-list{ transform: translateX(0); }
-  .nav-toggle{ display: flex; }
   .strip-grid{ grid-template-columns: 1fr 1fr; }
   .news-grid{ grid-template-columns: 1fr; }
   .footer-grid{ grid-template-columns: 1fr; }
