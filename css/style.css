@@ -416,6 +416,14 @@ table.schedule-table{ table-layout: fixed; }
 .schedule-table th:nth-child(3), .schedule-table td:nth-child(3){ width: 25%; }
 .schedule-table th:nth-child(4), .schedule-table td:nth-child(4){ width: 17%; }
 .schedule-table th:nth-child(5), .schedule-table td:nth-child(5){ width: 24%; }
+/* A <td> with display:flex stops respecting the table's fixed column
+   width in some browsers, so the Länkar cells collapsed to fit their
+   content and the links stacked instead of sitting on one row. Keep
+   the <td> itself a normal table-cell and flex only the inner
+   wrapper, with no wrapping, so the links share a single line
+   without affecting any column width. */
+.schedule-table .event-links{ display: table-cell; }
+.schedule-table .event-links-inner{ display: flex; align-items: center; gap: .6rem; flex-wrap: nowrap; }
 
 /* ============ Document list (Regler / Historia) ============ */
 .doc-section{ padding: 4.5rem 0 6rem; }
