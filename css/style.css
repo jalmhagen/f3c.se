@@ -252,6 +252,39 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 .gallery-tile{ display: block; border-radius: 10px; overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow); }
 .gallery-tile img{ width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
 .gallery-tile:hover img{ transform: scale(1.06); }
+
+/* ============ Lightbox ============ */
+.lightbox{
+  position: fixed; inset: 0; z-index: 999;
+  display: none; align-items: center; justify-content: center;
+  background: rgba(6,13,28,.92);
+  padding: 2rem;
+}
+.lightbox.open{ display: flex; }
+.lightbox-figure{ position: relative; max-width: 92vw; max-height: 88vh; display: flex; flex-direction: column; align-items: center; }
+.lightbox-img{ display: block; max-width: 92vw; max-height: 80vh; width: auto; height: auto; border-radius: 6px; box-shadow: var(--shadow); }
+.lightbox-caption{ color: #fff; font-size: .85rem; margin-top: .8rem; opacity: .85; text-align: center; }
+.lightbox-close, .lightbox-prev, .lightbox-next{
+  position: absolute; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.25);
+  color: #fff; border-radius: 999px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background .2s ease; line-height: 1; padding: 0;
+}
+.lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover{ background: rgba(255,255,255,.2); }
+.lightbox-close{ top: 1rem; right: 1rem; width: 2.75rem; height: 2.75rem; font-size: 1.5rem; }
+.lightbox-prev, .lightbox-next{ top: 50%; transform: translateY(-50%); width: 3rem; height: 3rem; font-size: 1.7rem; }
+.lightbox-prev{ left: .5rem; }
+.lightbox-next{ right: .5rem; }
+.lightbox-counter{
+  position: absolute; top: 1rem; left: 1rem; color: #fff; font-size: .82rem;
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.25); padding: .35rem .8rem; border-radius: 999px;
+}
+body.lightbox-locked{ overflow: hidden; }
+
+@media (max-width: 640px){
+  .lightbox{ padding: 1rem; }
+  .lightbox-prev, .lightbox-next{ width: 2.4rem; height: 2.4rem; font-size: 1.3rem; }
+  .lightbox-close{ width: 2.4rem; height: 2.4rem; font-size: 1.3rem; }
+}
 .gallery-jump{ display: flex; flex-wrap: wrap; gap: .6rem .9rem; margin-bottom: 2.5rem; font-size: .88rem; }
 .gallery-jump a{ color: var(--blue-500); font-weight: 600; }
 
