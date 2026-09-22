@@ -61,6 +61,7 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
   color: var(--blue-500);
   margin: 0 0 .6em;
 }
+.hero-content .eyebrow{ color: #fff; }
 
 /* ============ Buttons ============ */
 .btn{
