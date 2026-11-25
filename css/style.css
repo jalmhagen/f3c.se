@@ -147,6 +147,12 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
   border-bottom: 2px solid transparent;
 }
 .main-nav a:hover{ color: #fff; border-color: var(--blue-400); }
+.nav-lang{
+  border: 1px solid rgba(255,255,255,.32) !important;
+  border-radius: 4px;
+  padding: .3rem .6rem !important;
+}
+.nav-lang:hover{ border-color: var(--blue-400) !important; }
 
 .nav-toggle{
   display: none;

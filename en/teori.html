@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theory — F3C Sweden</title>
+<meta name="description" content="Terminology, autorotation, training tips and what to expect at competitions — the basics of F3C.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">F<span class="three">3</span>C<span>Sweden</span></a>
+    <nav class="main-nav" aria-label="Main menu">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <ul id="nav-list">
+        <li><a href="nyheter.html">News</a></li>
+        <li><a href="arrangemang.html">Events</a></li>
+        <li><a href="resultat.html">Results</a></li>
+        <li><a href="landslag.html">National Team</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="teori.html" class="active">Theory</a></li>
+        <li><a href="regler.html">Rules</a></li>
+        <li><a href="historia.html">History</a></li>
+        <li><a href="lankar.html">Links</a></li>
+        <li><a href="../teori.html" class="nav-lang" hreflang="sv">SV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero has-photo">
+    <div class="page-hero-media"><img src="../img/media/Bilder/2025/UT%202%20SM%202025%2C%20J%C3%B6nk%C3%B6ping/37DB0F30-778F-4F00-8250-04ABBC41133C.jpg" alt="" loading="eager"></div>
+    <div class="page-hero-scrim"></div>
+    <div class="wrap page-hero-inner">
+      <h1>Theory and training</h1>
+      <p>Terminology, autorotation, training tips and what applies on competition day — everything you need to get started with F3C.</p>
+    </div>
+  </section>
+
+  <section class="theory">
+    <div class="wrap">
+
+      <nav class="theory-toc" aria-label="Contents">
+        <a href="#terminologi">Terminology</a>
+        <a href="#autorotation">Autorotation</a>
+        <a href="#traningstips">Training tips</a>
+        <a href="#checklista">Starting to compete — checklist</a>
+        <a href="#pa-tavling">At a competition</a>
+        <a href="#gyro">Gyro PID Gain</a>
+      </nav>
+
+      <div class="theory-block" id="terminologi">
+        <h2>Terminology</h2>
+        <p>An illustration of an RC helicopter shows the names of its various parts:</p>
+        <img class="theory-img" style="max-width:600px" src="../img/media/2024-12/Heli%20terminologi.jpg" alt="Illustration of an RC helicopter's parts" loading="lazy">
+        <ul>
+          <li>1. Main rotor blade</li>
+          <li>2. Main rotor hub</li>
+          <li>3. Blade grip (main rotor)</li>
+          <li>4. Canopy</li>
+          <li>5. Landing gear</li>
+          <li>6. Fuel tank (or battery)</li>
+          <li>7. Boom</li>
+          <li>8. Tail rotor</li>
+          <li>9. Engine/muffler (electric helicopters don't need a fuel tank or muffler)</li>
+        </ul>
+        <h3>Hovering orientation</h3>
+        <p>We use different terms during hovering. Depending on where you're standing and how the helicopter is oriented relative to you, we refer to this as different positions.</p>
+        <img class="theory-img" style="max-width:640px" src="../img/media/2024-12/Heli%20terminologi%202.jpg" alt="Illustration of hovering orientation" loading="lazy">
+        <p>It's just as possible to fly and hover inverted (upside down). Backwards and sideways work too. There are no limits, only a lack of imagination!</p>
+      </div>
+
+      <div class="theory-block" id="autorotation">
+        <h2>Autorotation</h2>
+        <p>An autorotation is an emergency landing performed without the helicopter's engine running. If the engine stops on a helicopter, it doesn't have to result in a crash.</p>
+        <p>You can compare the helicopter's rotor to a wind turbine during an autorotation. In simple terms, the helicopter's rotor "windmills" (autorotates) all the way down to landing. We create a rate of descent by reducing the blade pitch to "negative". As the helicopter descends this creates plenty of "air under the rotor", which ensures the rotor doesn't lose speed. Near the ground the blade pitch is increased, creating lift that reduces the rate of descent.</p>
+        <p><strong>You only get one chance</strong>, since the rotor starts to slow down as soon as the blade pitch is increased!</p>
+        <h3>Method 1</h3>
+        <ul>
+          <li>The pitch on the main rotor blades is reduced to approx. -3°.</li>
+          <li>Forward speed is necessary, into the wind, with a landing angle of approx. 45°.</li>
+          <li>At approx. 2–5 m from the ground, a "flare" begins, braking the helicopter's forward speed and also reducing the rate of descent ahead of landing.</li>
+          <li>Right as the helicopter makes ground contact, full negative pitch is applied. This can prevent the helicopter from tipping over.</li>
+        </ul>
+        <img class="theory-img" style="max-width:480px" src="../img/media/2024-12/Auto%201.jpg" alt="Illustration of autorotation, method 1" loading="lazy">
+        <h3>Method 2</h3>
+        <ul>
+          <li>Same principle as Method 1 for the first three steps.</li>
+          <li>A later "flare" is performed at approx. 1 m height — but here we retain the helicopter's speed and keep flying forward.</li>
+          <li>On ground contact we apply a little negative pitch and the helicopter slides along the landing spot until it stops. This way we save a bit of rotational energy in the rotor blades, which can be better if we don't have much energy left — but the helicopter risks tipping over if the speed on ground contact is too high.</li>
+        </ul>
+        <img class="theory-img" style="max-width:640px" src="../img/media/2024-12/Auto%202.jpg" alt="Illustration of autorotation, method 2" loading="lazy">
+        <p>Below you can see F3C autorotations with 2 x 90° turns from a Japanese championship.</p>
+      </div>
+
+      <div class="theory-block" id="traningstips">
+        <h2>Training tips</h2>
+        <p>F3C demands a lot of discipline and patience. The difficulty level of the manoeuvres involved is incredibly high. For the lone pilot training at the field, it's not easy to know exactly what a manoeuvre should look like — it helps to watch others fly the same schedule. That's why it's important to watch a competition, or see someone compete. But the best training comes at the competition itself, when all the judges and pilots are present and can offer tips and advice.</p>
+        <h3>Equipment</h3>
+        <p>Besides a helicopter, not much else is needed to start training. The most important thing is having a hovering square that looks the same as at a competition. To make one you need three things: a tape measure, a couple of flags, and paint/spray paint. It's enough to paint the centre circle ("H"), the flags, and the pilot box ("P") if you want to save on paint.</p>
+        <img class="theory-img" style="max-width:520px" src="../img/media/2024-12/2855018.jpg" alt="Hovering square for training" loading="lazy">
+        <h3>Hovering training tips</h3>
+        <p>There's no single right answer for optimal training. One important part is drawing up a hovering square. If the field is uneven with hills and trees, the wind becomes turbulent when it blows — that gives good training, but competition venues usually have an even surface and are free of obstacles.</p>
+        <p>Some basic manoeuvres are good to master before you start competing:</p>
+        <ul>
+          <li><strong>Take-off and landing in the hover circle</strong> — the model climbs at a steady speed. The helicopter must reach a height of 2 m.</li>
+          <li><strong>Moving between the hover circle and a flag</strong> — once you've mastered the first elements, practise moving to a flag (backwards or forwards). The model should maintain the same height and a smooth speed throughout.</li>
+          <li><strong>Hovering over a flag</strong> — the helicopter's rotor shaft should be over the intended line above the flag. Once you've mastered this you can move on to slow pirouettes over the flag.</li>
+          <li><strong>Hovering over a flag at 4–5 m height</strong> — same as above but at a higher altitude.</li>
+          <li><strong>Hovering at 4–7 m over the centre circle</strong> — same as above but directly in front of the pilot at 4–5 metres height.</li>
+        </ul>
+        <h3>Flying training tips</h3>
+        <p>The two most important factors are precision and smoothness in the manoeuvre. The size of the different manoeuvres relative to each other must also be consistent and not deviate too much.</p>
+        <ul>
+          <li><strong>Straight flybys</strong> — you must be able to fly straight past yourself for about 100 m both into and with the wind, maintaining the same height and speed throughout. A good height is about 15–20 m above the ground and 50–70 m in front of the pilot.</li>
+          <li><strong>Rolls, loops and stall turns</strong> — all three are good to master. If you can do them centred in front of you, it's easier to combine them with other elements.</li>
+          <li><strong>Landing/autorotation</strong> — always good to be able to perform safely. If you can do it with precision, e.g. landing/autorotating within a circle, you've come a good way towards a strong placing in a competition.</li>
+        </ul>
+      </div>
+
+      <div class="theory-block" id="checklista">
+        <h2>Starting to compete — checklist</h2>
+        <img class="theory-img" style="max-width:480px" src="../img/media/2024-12/checklist.jpg" alt="Checklist" loading="lazy">
+        <ul>
+          <li>Read through the information here on F3C.se. Contact us on <a class="inline-link" href="https://www.facebook.com/groups/265062390228877/" target="_blank" rel="noopener">Facebook</a> to let us know you're interested — you can get personal help!</li>
+          <li>Choose a helicopter. If you have a choice, choose a larger helicopter — otherwise start with what you have, anything from 500-size and up works well.</li>
+          <li>Set up the machine for F3C. Read through everything on the technical page, Set-Up for F3C, and feel free to contact us on Facebook again.</li>
+          <li>Start practising the schedule you think suits you — read the <a class="inline-link" href="#traningstips">training tips</a>. There are three difficulty levels; details are found under <a class="inline-link" href="regler.html">Rules</a>. Contact us on Facebook to find your nearest training buddy.</li>
+          <li>Get your competition licence. You must be a member of a registered SMFF club — talk to your club about wanting a competition licence for F3C. It costs SEK 200/year, and your club may want to sponsor the fee (since you'll be representing the club).</li>
+          <li>Start competing! Go to <a class="inline-link" href="arrangemang.html">Events</a> and find out where your nearest competition is being held.</li>
+        </ul>
+      </div>
+
+      <div class="theory-block" id="pa-tavling">
+        <h2>At a competition</h2>
+        <h3>Briefing</h3>
+        <p>All pilots, judges and organisers gather for a briefing before the competition begins. The organiser welcomes all participants and the competition director gets to have their say. Topics include weather forecasts, the competition venue, the start order, and which class goes first.</p>
+        <img class="theory-img" style="max-width:400px" src="../img/media/2024-12/ta%CC%88vla1.jpg" alt="Briefing" loading="lazy">
+        <h3>Reference flight</h3>
+        <p>Before the competition officially begins, a reference flight is flown in every class. This is purely for the judges' benefit, so they can "warm up". The flights are performed by three volunteer pilots, and afterwards the judges discuss their opinions on each flight so they can give consistent scoring and make sure no one's opinions or scores deviate too far.</p>
+        <img class="theory-img" style="max-width:400px" src="../img/media/2024-12/ta%CC%88vla2.jpg" alt="Reference flight" loading="lazy">
+        <h3>Pit area</h3>
+        <p>Mental preparation may already have started the week before you arrived at the competition. Your nerves will, in any case, kick in at the pit area. Here it's important that all your equipment works — your routines with fuelling, screwing on the rotor blades, checking the charge and so on now come into play. One tip is not to change these routines just because you're competing — do as you've always done.</p>
+        <img class="theory-img" style="max-width:400px" src="../img/media/2024-12/ta%CC%88vla3.jpg" alt="Pit area" loading="lazy">
+        <h3>The ready box</h3>
+        <p>Now it's soon your turn to fly. There's a designated spot for the competitor to start their machine calmly. In the ready box you're only allowed to hover the helicopter at eye height and perform a half pirouette — a full 360-degree pirouette is not permitted. The competitor is entitled to 5 minutes before start in the ready box, and the pilot's caller/mechanic may also be present here.</p>
+        <img class="theory-img" style="max-width:480px" src="../img/media/2024-12/ta%CC%88vla4.jpg" alt="The ready box" loading="lazy">
+        <h3>Caller/mechanic</h3>
+        <p>At a competition, each pilot has a "caller" (reader), who can also act as the pilot's mechanic in the ready box. The whole purpose of a caller is to help the pilot remember every manoeuvre, and to tell the judges when a manoeuvre starts and ends.</p>
+        <img class="theory-img" style="max-width:340px" src="../img/media/2024-12/ta%CC%88vla5.jpg" alt="Caller/mechanic" loading="lazy">
+        <h3>The competition box</h3>
+        <p>Once you've stepped away from the ready box, there's no turning back. The round is disqualified if the engine stops or if the pilot or caller touches the machine. When the helicopter is in position at the centre of the hover square, the pilot and caller stand in the pilot box in front of the five judges. In the hover square the competitor performs two hovering manoeuvres, then 5–7 flying manoeuvres (depending on the schedule).</p>
+        <img class="theory-img" style="max-width:600px" src="../img/media/2024-12/ta%CC%88vla6.jpg" alt="The competition box" loading="lazy">
+        <h3>The results</h3>
+        <p>After your flight, the results and current standings are shown. Around this point you'll typically hear comments like "Didn't I get more points!?", "It was so windy!" and "I need to fly better next round". It's all great fun, as you'll understand once you compete for the first time!</p>
+        <img class="theory-img" style="max-width:600px" src="../img/media/2024-12/ta%CC%88vla7.jpg" alt="The results" loading="lazy">
+      </div>
+
+      <div class="theory-block" id="gyro">
+        <h2>Gyro PID Gain</h2>
+        <p>The video below gives a clear explanation of how the P, I and D settings in a gyro affect how the helicopter responds to changes.</p>
+        <div class="video-embed" style="max-width:640px">
+          <iframe src="https://www.youtube.com/embed/ep8OO-1XmrY" title="Gyro PID Gain" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo logo-footer">F<span class="three">3</span>C<span>Sweden</span></a>
+      <p>An international aerobatic competition class for radio-controlled helicopters, regulated by the Fédération Aéronautique Internationale (FAI). We are also part of the Swedish Model Flying Association (SMFF).</p>
+      <a class="social-link" href="https://www.facebook.com/groups/1132193521685893" target="_blank" rel="noopener">Facebook: F3C Sweden</a>
+    </div>
+    <div class="footer-col">
+      <h3>Navigate</h3>
+      <ul>
+        <li><a href="nyheter.html">News</a></li>
+        <li><a href="arrangemang.html">Events</a></li>
+        <li><a href="resultat.html">Results</a></li>
+        <li><a href="landslag.html">National Team</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="teori.html">Theory</a></li>
+        <li><a href="regler.html">Rules</a></li>
+        <li><a href="historia.html">History</a></li>
+        <li><a href="lankar.html">Links</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <ul class="contact-list">
+        <li>
+          <strong>Anders Stålblom</strong>
+          <span>Helicopter Discipline Specialist, SMFF</span>
+          <a href="mailto:anders.stalblom@gmail.com">anders.stalblom@gmail.com</a>
+        </li>
+        <li>
+          <strong>Jesper Almhagen</strong>
+          <span>Website Manager</span>
+          <a href="mailto:j_almhagen@hotmail.com">j_almhagen@hotmail.com</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> F3C Sweden</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
