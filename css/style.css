@@ -124,13 +124,14 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.95rem;
-  color: var(--blue-400);
+  color: #fff;
   letter-spacing: .01em;
 }
-.logo span{ font-weight: 500; color: #fff; margin-left: .3em; }
-.logo .three{ color: #FFCD00; margin-left: -.05em; }
+.logo span{ font-weight: 500; color: #FFCD00; margin-left: .3em; }
+.logo .three{ color: #fff; margin-left: -.05em; }
 .logo-footer{ color: var(--blue-500); }
 .logo-footer span{ color: var(--navy-900); }
+.logo-footer .three{ color: #FFCD00; }
 
 .main-nav #nav-list{
   display: flex;
