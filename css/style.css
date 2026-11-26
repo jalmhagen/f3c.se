@@ -119,11 +119,12 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 .header-inner{
   display: flex; align-items: center; justify-content: space-between;
   height: 72px;
+  max-width: 1340px;
 }
 .logo{
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 2.6rem;
   color: var(--blue-400);
   letter-spacing: .01em;
 }
@@ -134,13 +135,13 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 
 .main-nav #nav-list{
   display: flex;
-  gap: 2rem;
+  gap: 1.3rem;
 }
 .main-nav a{
   font-family: var(--font-display);
-  font-size: .88rem;
+  font-size: .74rem;
   font-weight: 600;
-  letter-spacing: .03em;
+  letter-spacing: .02em;
   color: rgba(255,255,255,.85);
   text-transform: uppercase;
   padding: .4rem 0;
@@ -150,7 +151,7 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 .nav-lang{
   display: inline-flex;
   align-items: center;
-  margin-left: 1.25rem;
+  margin-left: .9rem;
   border: 1px solid rgba(255,255,255,.32);
   border-radius: 4px;
   padding: .3rem;
