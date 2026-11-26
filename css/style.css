@@ -132,6 +132,12 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 .logo-footer{ color: var(--blue-500); }
 .logo-footer span{ color: var(--navy-900); }
 
+.brand-group{
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
 .main-nav #nav-list{
   display: flex;
   gap: 2rem;
@@ -148,11 +154,14 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 }
 .main-nav a:hover{ color: #fff; border-color: var(--blue-400); }
 .nav-lang{
-  border: 1px solid rgba(255,255,255,.32) !important;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255,255,255,.32);
   border-radius: 4px;
-  padding: .3rem .6rem !important;
+  padding: .3rem;
 }
-.nav-lang:hover{ border-color: var(--blue-400) !important; }
+.nav-lang:hover{ border-color: var(--blue-400); }
+.nav-lang .flag-icon{ display: block; border-radius: 2px; }
 
 .nav-toggle{
   display: none;
