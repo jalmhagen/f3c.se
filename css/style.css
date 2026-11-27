@@ -128,7 +128,7 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
   letter-spacing: .01em;
 }
 .logo span{ font-weight: 500; color: #D9AE00; margin-left: .3em; }
-.logo .three{ color: #fff; margin-left: -.05em; }
+.logo .three{ color: #fff; margin-left: -.05em; font-weight: 800; }
 .logo-footer{ color: #000; }
 .logo-footer span{ color: #000; }
 .logo-footer .three{ color: #000; }
