@@ -130,18 +130,28 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 .logo span{ font-weight: 800; color: #F4EA00; margin-left: .3em; text-transform: uppercase; }
 .logo .three{ color: #fff; margin-left: -.05em; font-weight: 800; }
 .logo .logo-url{
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #fff;
-  color: #0a1730;
-  font-family: var(--font-body);
-  font-size: .32em;
-  font-weight: 700;
-  letter-spacing: .02em;
-  text-transform: uppercase;
-  padding: .3em .5em;
+  height: 1.22em;
+  width: .62em;
   margin: 0 .35em;
   border-radius: 2px;
   vertical-align: middle;
+  overflow: hidden;
+}
+.logo .logo-url-text{
+  display: inline-block;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  line-height: 1;
+  color: #0a1730;
+  font-family: var(--font-body);
+  font-size: .15em;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 .logo-footer{ color: #000; }
 .logo-footer span{ color: #000; }
