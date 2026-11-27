@@ -129,9 +129,9 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 }
 .logo span{ font-weight: 500; color: #D9AE00; margin-left: .3em; }
 .logo .three{ color: #fff; margin-left: -.05em; }
-.logo-footer{ color: var(--blue-500); }
+.logo-footer{ color: #000; }
 .logo-footer span{ color: #000; }
-.logo-footer .three{ color: #D9AE00; }
+.logo-footer .three{ color: #000; }
 
 .main-nav #nav-list{
   display: flex;
