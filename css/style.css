@@ -354,6 +354,8 @@ body.lightbox-locked{ overflow: hidden; }
   background: var(--navy-900);
 }
 .video-embed iframe{ position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-embed a{ position: absolute; inset: 0; display: block; }
+.video-embed img{ width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* ============ CTA ============ */
 .cta-section{
