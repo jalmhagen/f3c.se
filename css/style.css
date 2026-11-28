@@ -310,11 +310,11 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
   position: fixed; inset: 0; z-index: 999;
   display: none; align-items: center; justify-content: center;
   background: rgba(6,13,28,.92);
-  padding: 2rem;
+  padding: 1.25rem;
 }
 .lightbox.open{ display: flex; }
-.lightbox-figure{ position: relative; max-width: 92vw; max-height: 88vh; display: flex; flex-direction: column; align-items: center; }
-.lightbox-img{ display: block; max-width: 92vw; max-height: 80vh; width: auto; height: auto; border-radius: 6px; box-shadow: var(--shadow); }
+.lightbox-figure{ position: relative; max-width: 96vw; max-height: 94vh; display: flex; flex-direction: column; align-items: center; }
+.lightbox-img{ display: block; max-width: 96vw; max-height: 90vh; width: auto; height: auto; border-radius: 6px; box-shadow: var(--shadow); }
 .lightbox-caption{ color: #fff; font-size: .85rem; margin-top: .8rem; opacity: .85; text-align: center; }
 .lightbox-close, .lightbox-prev, .lightbox-next{
   position: absolute; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.25);
