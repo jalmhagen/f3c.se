@@ -117,9 +117,13 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
   backdrop-filter: blur(10px);
 }
 .header-inner{
-  display: flex; align-items: center; justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
   height: 72px;
 }
+.header-inner .logo{ justify-self: start; }
+.header-inner .main-nav{ justify-self: center; }
 .logo{
   font-family: var(--font-display);
   font-weight: 800;
@@ -404,6 +408,7 @@ body.lightbox-locked{ overflow: hidden; }
   }
   .main-nav.open #nav-list{ transform: translateX(0); }
   .nav-toggle{ display: flex; }
+  .header-inner .main-nav{ justify-self: end; }
 }
 
 @media (max-width: 960px){
