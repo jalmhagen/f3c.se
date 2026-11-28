@@ -295,7 +295,7 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 .gallery-section{ background: var(--paper-soft); }
 .photo-grid{
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: .75rem;
 }
 .photo-grid-item{ border-radius: 10px; overflow: hidden; aspect-ratio: 1/1; }
@@ -614,7 +614,7 @@ table.schedule-table{ table-layout: fixed; }
   .news-grid{ grid-template-columns: 1fr; }
   .footer-grid{ grid-template-columns: 1fr; }
   .footer-brand{ grid-column: auto; }
-  .photo-grid{ grid-template-columns: repeat(3, 1fr); }
+  .photo-grid{ grid-template-columns: repeat(2, 1fr); }
   .hero-content{ padding: 5.5rem 20px 3rem; }
   .archive-item{ grid-template-columns: 1fr; gap: .4rem; }
   .archive-thumb{ float: none; width: 100%; max-width: none; aspect-ratio: 16/9; margin: .6rem 0; }
